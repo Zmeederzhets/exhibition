@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #464646;
+  font-family: $OpenSans;
+  font-size: 14px;
+  width: 100%;
+
+  @include min-width(sm) {
+    font-size: 16px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.contain {
+  max-width: 376px;
+  margin: auto;
+  padding-left:15px;
+  padding-right: 15px;
+  padding-bottom: 0;
+
+
+@media (min-width: 376px) {
+    max-width: 100%;
+  margin: 0 auto;
+  }
+}
+
