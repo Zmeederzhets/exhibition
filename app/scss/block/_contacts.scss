@@ -1,0 +1,24 @@
+.contacts{
+  display: flex;
+  justify-content: flex-end;
+
+  &__messenger{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 23px;
+    align-items: center;
+  }
+
+  &__phone{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    //font-family: $HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 22px;
+    line-height: 130%;
+  }
+}
+

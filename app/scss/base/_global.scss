@@ -3,11 +3,15 @@
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+  color: #333;
+}
 
 body {
   background: #fff;
-  color: #464646;
-  font-family: $OpenSans;
+  color: #333;
+  font-family: $HelveticaNeueCyr;
   font-size: 14px;
   width: 100%;
 
@@ -27,16 +31,12 @@ button {
 }
 
 .contain {
-  max-width: 376px;
-  margin: auto;
+  margin: 0 auto;
   padding-left:15px;
   padding-right: 15px;
   padding-bottom: 0;
-
-
-@media (min-width: 376px) {
-    max-width: 100%;
-  margin: 0 auto;
-  }
 }
 
+.grey{
+  color: #888;
+}

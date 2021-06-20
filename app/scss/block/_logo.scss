@@ -1,0 +1,12 @@
+.logo{
+  display: flex;
+  justify-content: flex-start;
+}
+.logo__title{
+  padding-left: 20px;
+}
+@media (max-width: 768px){
+  .logo__title{
+    display: none;
+  }
+}
