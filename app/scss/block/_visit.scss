@@ -1,10 +1,14 @@
 .visit{
   display: flex;
   justify-content: space-around;
- }
 
-@media (max-width: 768px){
-.visit__time{
+  @media  (max-width: 375px){
   display: none;
-}
+  }
+
+  &__time{
+  @media (max-width: 768px){
+  display: none;
+    }
+  }
 }
