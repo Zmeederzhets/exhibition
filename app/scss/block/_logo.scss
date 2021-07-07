@@ -2,15 +2,30 @@
   display: flex;
   justify-content: flex-start;
 
-  @media (max-width: 768px){
-    display: block;
+  &__image{
+    width: 60px;
+    height: 36px;
+
+    @include min-width(sm){
+      width: 80px;
+      height: 48px;
+    }
+
+    @include min-width(md){
+      width: 100px;
+      height: 60px;
+    }
   }
 
   &__title{
-    padding-left: 20px;
+    display: none;
 
-    @media (max-width: 768px){
-      display: none;
+    @include min-width(md){
+      display: block;
+      padding-left: 20px;
+      font-family: $HelveticaNeueCyr;
+      font-size: 14px;
+      line-height: 130%;
     }
   }
 }

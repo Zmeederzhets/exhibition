@@ -1,32 +1,69 @@
 .contacts{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 
-  @media  (max-width: 375px){
-      flex-direction: row-reverse;
+  @include min-width(sm){
+    flex-direction: row-reverse;
     }
 
   &__messenger{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 23px;
+    display: flex;
     align-items: center;
   }
 
+  &__messenger-icon{
+    width: 22px;
+    height: 22px;
+    margin: 7px;
+
+    @include min-width(sm){
+      width: 26px;
+      height: 26px;
+      margin: 10px;
+    }
+
+    @include min-width(md){
+      width: 30px;
+      height: 30px;
+      margin: 11px;
+    }
+
+  }
+
+
+
+
   &__phone{
-    padding-left: 40px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     font-family: $HelveticaNeueCyr;
     font-weight: 550;
-    font-size: 22px;
+    font-size: 14px;
     line-height: 130%;
+
+    @include min-width(sm){
+      padding-left: 27px;
+      font-size: 18px;
+    }
+    @include min-width(md){
+      padding-left: 40px;
+      font-size: 22px;
+    }
+
+  }
+
+  &__phone-basic{
+    padding-right: 7px;
   }
 
   &__phone-other{
-      @media  (max-width: 375px){
-      display: none;
+    display: none;
+
+    @include min-width(sm){
+      display: block;
+
     }
   }
 }

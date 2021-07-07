@@ -1,14 +1,31 @@
 .visit{
-  display: flex;
-  justify-content: space-around;
-
-  @media  (max-width: 375px){
+  font-family: $HelveticaNeueCyr;
+  font-size: 12px;
+  line-height: 130%;
   display: none;
+
+  @include min-width(sm) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__address{
+    display: none;
+
+    @include min-width(sm){
+    display: block;
+    }
   }
 
   &__time{
-  @media (max-width: 768px){
-  display: none;
+    display: none;
+
+    @include min-width(md){
+      display: block;
+      padding-left: 60px;
     }
+
+
   }
 }
+

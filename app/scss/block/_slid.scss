@@ -1,0 +1,55 @@
+.slid {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  background-image: url("/img/slider1.png");
+
+  &__arrow {
+    width: 17px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      transform: scale(1.3, 1.3);
+    }
+
+    &:active {
+      transform: scaleX(-1);
+    }
+  }
+
+  &__arrow-next {
+    right: 30px;
+    background-image: url("/img/next.svg");
+  }
+
+  &__arrow-prev {
+    left: 30px;
+    background-image: url("/img/previous.svg");
+  }
+
+  &__radio {
+      text-align: center;
+      display: block;
+      padding-top: 372px;
+
+    }
+
+
+  &__radio-color {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    padding-right: 15px;
+    border: 0px  #888;
+  }
+}
+
+
+
+

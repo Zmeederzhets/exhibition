@@ -11,15 +11,8 @@ a{
 
 body {
   background: #fff;
-  color: #333;
-  font-family: $HelveticaNeueCyr;
-  font-size: 14px;
   width: 100%;
-
-  @include min-width(sm) {
-    font-size: 16px;
-  }
-}
+ }
 
 img {
   max-width: 100%;
@@ -32,12 +25,26 @@ button {
 }
 
 .contain {
+  max-width: 300px;
   margin: 0 auto;
-  padding-left:15px;
-  padding-right: 15px;
+  padding-left:7px;
+  padding-right: 7px;
   padding-bottom: 0;
+
+  @include min-width(sm){
+    max-width: 620px;
+    padding-left:10px;
+    padding-right: 10px;
+  }
+
+  @include min-width(md){
+    max-width: 1160px;
+    padding-left:15px;
+    padding-right: 15px;
+  }
 }
 
 .grey{
   color: #888;
 }
+
