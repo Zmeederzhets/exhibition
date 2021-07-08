@@ -25,23 +25,12 @@ button {
 }
 
 .contain {
-  max-width: 300px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding-left:7px;
-  padding-right: 7px;
+  padding-left:10px;
+  padding-right: 10px;
   padding-bottom: 0;
 
-  @include min-width(sm){
-    max-width: 620px;
-    padding-left:10px;
-    padding-right: 10px;
-  }
-
-  @include min-width(md){
-    max-width: 1160px;
-    padding-left:15px;
-    padding-right: 15px;
-  }
 }
 
 .grey{

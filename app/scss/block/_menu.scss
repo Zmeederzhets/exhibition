@@ -1,26 +1,25 @@
 .menu {
   display: flex;
   align-items: center;
-  white-space:nowrap;
+  white-space: nowrap;
 
 
   @include min-width(md) {
     margin-top: 35px;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
     background-color: #333;
   }
 
-  &__item{
+  &__item {
     padding: 0 20px;
   }
 
   &__list {
     display: none;
 
-    @include min-width(md){
+    @include min-width(md) {
       margin: auto;
       max-width: 810px;
       padding: 20px 0;
@@ -33,7 +32,7 @@
     }
   }
 
-  &__disclose{
+  &__disclose {
     padding-left: 11px;
   }
 
@@ -47,7 +46,7 @@
     border: none;
     background-color: transparent;
 
-    @include min-width(md){
+    @include min-width(md) {
       display: none;
     }
   }
@@ -56,21 +55,21 @@
     display: block;
     stroke: #333; //задаю color для элементов SVG
 
-    @include min-width(md){
-     display: none;
+    @include min-width(md) {
+      display: none;
     }
   }
 
   // конд ниже не знаю как красивше расписать, для появления крестика
 
-    .menu__icon-menu,
-    .menu__button--open .menu__icon-cross {
-      display: block;
-    }
+  .menu__icon-menu,
+  .menu__button--open .menu__icon-cross {
+    display: block;
+  }
 
-    .menu__icon-cross,
-    .menu__button--open .menu__icon-menu {
-      display: none;
-    }
+  .menu__icon-cross,
+  .menu__button--open .menu__icon-menu {
+    display: none;
+  }
 
 }

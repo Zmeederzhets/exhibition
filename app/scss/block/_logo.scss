@@ -1,26 +1,25 @@
-.logo{
+.logo {
   display: flex;
-  justify-content: flex-start;
 
-  &__image{
+  &__image {
     width: 60px;
     height: 36px;
 
-    @include min-width(sm){
+    @include min-width(sm) {
       width: 80px;
       height: 48px;
     }
 
-    @include min-width(md){
+    @include min-width(md) {
       width: 100px;
       height: 60px;
     }
   }
 
-  &__title{
+  &__title {
     display: none;
 
-    @include min-width(md){
+    @include min-width(md) {
       display: block;
       padding-left: 20px;
       font-family: $HelveticaNeueCyr;
