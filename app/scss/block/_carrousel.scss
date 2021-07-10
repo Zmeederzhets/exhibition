@@ -1,38 +1,8 @@
-.slid {
+.carrousel {
   position: relative;
   margin-top: 20px;
   width: 100%;
-  z-index: 1;
-
-
-  &__item {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  &__contain{
-    width: max-content;
-
-  }
-  &__title {
-    padding: 70px 40px 20px 30px;
-    align-items: center;
-    max-width: 560px;
-    font-family: $CormorantGaramond;
-    font-weight: normal;
-    font-size: 42px;
-    line-height: 120%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #333333;
-  }
-
-  &__image {
-    object-fit: cover;
-
-  }
+  z-index: 20;
 
   &__arrow {
     width: 17px;
@@ -66,7 +36,7 @@
   &__radio {
     text-align: center;
     display: block;
-    padding-top: 372px;
+    padding-top: 350px;
 
   }
 

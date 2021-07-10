@@ -10,169 +10,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">    <!--для адаптивной вёрстки-->
 </head>
 <body>
-    <header class="header contain">
-        <div class="logo">
-            <a class="logo__image" href=""><img src="img/logo.png" alt=""></a>
-            <div class="logo__title"><p>С 2012 года производим<br>мебель по индивидуальным<br>размерам</p></div>
-        </div>
-        <div class="visit">
-            <div class="visit__address"><p class="grey">Шоу-рум:</p><p>г. Екатеринбург<br>ул. Белинского, 169Б</p></div>
-            <div class="visit__time"><p class="grey">График работы:</p><p>ПН-ПТ с 10 до 19<br>СБ-ВС с 10 до 18</p></div>
-        </div>
-        <div class="contacts">
-            <div class="contacts__phone">
+<header class="header contain">
+    <div class="logo">
+        <a class="logo__image" href=""><img src="img/logo.png" alt=""></a>
+        <div class="logo__title"><p>С 2012 года производим<br>мебель по индивидуальным<br>размерам</p></div>
+    </div>
+    <div class="visit">
+        <div class="visit__address"><p class="grey">Шоу-рум:</p>
+            <p>г. Екатеринбург<br>ул. Белинского, 169Б</p></div>
+        <div class="visit__time"><p class="grey">График работы:</p>
+            <p>ПН-ПТ с 10 до 19<br>СБ-ВС с 10 до 18</p></div>
+    </div>
+    <div class="contacts">
+        <div class="contacts__phone">
             <a class="contacts__phone-basic" href="tel:+375298521563">8 (343) 2 868 395</a>
             <a class="contacts__phone-other" href="tel:+375298521563">8 (902) 8 777 952</a>
+        </div>
+        <div class="contacts__messenger">
+            <a href="https://wa.me/+375298521563" target="_blank" rel="nofollow"><img class="contacts__messenger-icon"
+                                                                                      src="img/watsapp.svg" alt=""></a>
+            <a href="https://t.me/sorok_perviy_medved" target="_blank" rel="nofollow"><img
+                    class="contacts__messenger-icon" src="img/telegram.svg" alt=""></a>
+        </div>
+    </div>
+    <nav class="menu">
+        <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+            <svg class="menu__icon" aria-hidden="true" width="26" height="26">
+                <use class="menu__icon-menu " href="img/sprite.svg#menu"></use>
+                <use class="menu__icon-cross" href="img/sprite.svg#cross"></use>
+            </svg>
+        </button>
+        <ul class="menu__list" id="menu__list">
+            <li class="menu__item">
+                <a class="menu__link " href>КАТАЛОГ МЕБЕЛИ</a>
+                <img class="menu__disclose" src="img/triangle.svg" alt="">
+            </li>
+            <li class="menu__item">
+                <a class="menu__link " href>МАТЕРИАЛЫ</a>
+                <img class="menu__disclose" src="img/triangle.svg" alt="">
+            </li>
+            <li class="menu__item">
+                <a class="menu__link " href>ГАРАНТИЯ</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href>ПОЛЕЗНО</a>
+                <img class="menu__disclose" src="img/triangle.svg" alt="">
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href>ПОРТФОЛИО</a>
+                <img class="menu__disclose" src="img/triangle.svg" alt="">
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href>КОНТАКТЫ</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contain">
+
+    <div class="carrousel">
+
+
+        <div class="slide">
+            <div class="slide__item">
+                <h2 class="slide__title">ИЗГОТАВЛИВАЕМ МЕБЕЛь на заказ для всех жилых зон</h2>
+                <a class="slide__link" href="">ПОСМОТРЕТЬ ВИДЕО О НАС<button class="slide__button"><img src="img/slid_button.svg" alt=""></button>
+                </a>
             </div>
-            <div class="contacts__messenger">
-                <a href="https://wa.me/+375298521563" target="_blank" rel="nofollow"><img class="contacts__messenger-icon" src="img/watsapp.svg" alt=""></a>
-                <a href="https://t.me/sorok_perviy_medved" target="_blank" rel="nofollow"><img class="contacts__messenger-icon" src="img/telegram.svg" alt=""></a>
+            <div><img class="slide__img" src="img/slider1.png" alt=""></div>
+        </div>
+
+
+        <div class="slide2">
+            <div class="slide2__item">
+                <h2 class="slide2__title">РАССРОЧКА БЕЗ ПРОЦЕНТОВ</h2>
+                <p class="slide2__subtitle">От до 36 месяцев</p>
+                <img class="slide2__slogan" src="img/text.svg" alt="">
+            </div>
+            <img class="slide2__img" src="img/card.png" alt="карта рассрочки Хала">
+        </div>
+
+        <div class="slide3">
+           <div><img class="slide3__img" src="img/sink.jpg" alt="Красивая черная мойка"></div>
+            <div class="slide3__item">
+                <h2 class="slide3__title">МОЙКА В ПОДАРОК</h2>
+                <p class="slide3__subtitle">При заказе кухни свыше 100 000 руб.</p>
             </div>
         </div>
-        <nav class="menu">
-            <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
-                <svg class="menu__icon" aria-hidden="true" width="26" height="26">
-                    <use class="menu__icon-menu " href="img/sprite.svg#menu"></use>
-                    <use class="menu__icon-cross" href="img/sprite.svg#cross"></use>
-                </svg>
-            </button>
-            <ul class="menu__list" id="menu__list">
-                <li class="menu__item">
-                    <a class="menu__link " href>КАТАЛОГ МЕБЕЛИ</a>
-                    <img class="menu__disclose"  src="img/triangle.svg" alt="">
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link " href>МАТЕРИАЛЫ</a>
-                    <img class="menu__disclose"  src="img/triangle.svg" alt="">
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link " href>ГАРАНТИЯ</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href>ПОЛЕЗНО</a>
-                    <img class="menu__disclose" src="img/triangle.svg" alt="">
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href>ПОРТФОЛИО</a>
-                    <img class="menu__disclose" src="img/triangle.svg" alt="">
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href>КОНТАКТЫ</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="contain">
-
-        <div class="slid">
-            <div class="slid__item">
-                <div class="slid__contain">
-                    <h2 class="slid__title">ИЗГОТАВЛИВАЕМ МЕБЕЛь на заказ для всех жилых зон</h2>
-                    <p>ПОСМОТРЕТЬ ВИДЕО О НАС</p>
-                    <button></button>
-                </div>
-                <div class="slid__img"><img src="img/slider1.png" alt=""></div>
-
-            </div>
 
 
-            <button class="slid__arrow slid__arrow-prev" aria-label="Previous" type="button" style=""></button>
-            <button class="slid__arrow slid__arrow-next" aria-label="Next" type="button" style=""></button>
-            <div class="slid__radio">
-                <button class="slid__radio-color"></button>
-                <button class="slid__radio-color"></button>
-                <button class="slid__radio-color"></button>
-                <button class="slid__radio-color"></button>
-            </div>
-
-
+        <button class="carrousel__arrow carrousel__arrow-prev" aria-label="Previous" type="button" style=""></button>
+        <button class="carrousel__arrow carrousel__arrow-next" aria-label="Next" type="button" style=""></button>
+        <div class="carrousel__radio">
+            <button class="carrousel__radio-color"></button>
+            <button class="carrousel__radio-color"></button>
+            <button class="carrousel__radio-color"></button>
+            <button class="carrousel__radio-color"></button>
         </div>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h3>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h3>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h1>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h1>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h3>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h3>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h1>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h1>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h3>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h3>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h1>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h1>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h3>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h3>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h1>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h1>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h3>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h3>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h1>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h1>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h3>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h3>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h1>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h1>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h3>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h3>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-        <h1>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</h1>
-        <p>lear jslgjvkhsldkvn;m njb dso;ldknvlk  hclvilyh nslnljdhbn</p>
-    </main>
+    </div>
+
+
+
 </body>
 </html>
 

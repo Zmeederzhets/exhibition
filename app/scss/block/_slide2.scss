@@ -1,0 +1,38 @@
+.slide2 {
+  display: none;
+  width: 100%;
+  //display: flex;
+  //position: absolute;
+  background: #54293C;
+
+
+
+  &__title {
+    padding: 90px 90px 30px 100px;
+    max-width: 560px;
+    font-family: $CormorantGaramond;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__subtitle {
+    padding-left: 100px;
+    font-family: $HelveticaNeueCyr;
+    font-size: 20px;
+    line-height: 130%;
+    color: #fff;
+  }
+
+  &__slogan {
+    padding: 0 35px 88px 320px;
+  }
+
+  &__img {
+    padding: 57px 0 56px 0;
+    object-fit: cover;
+  }
+}
