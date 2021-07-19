@@ -2,7 +2,23 @@
   position: relative;
   margin-top: 20px;
   width: 100%;
-  z-index: 20;
+
+  &__slide{
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/slider3_mob.jpg");
+    background-size: cover;
+
+    @include min-width(sm){
+      height: 380px;
+      background-image: url("../img/slider3_p.jpg");
+    }
+
+    @include min-width(md){
+      height: 400px;
+      background-image: url("../img/slider3.jpg");
+    }
+  }
 
   &__arrow {
     width: 17px;
@@ -34,9 +50,9 @@
   }
 
   &__radio {
+    margin-top: -40px;
     text-align: center;
     display: block;
-    padding-top: 350px;
 
   }
 

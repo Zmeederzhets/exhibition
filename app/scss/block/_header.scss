@@ -1,11 +1,11 @@
 .header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+  z-index: 999;
 
   @include min-width(sm) {
     padding-top: 33px
