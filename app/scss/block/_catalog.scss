@@ -1,0 +1,116 @@
+.catalog {
+  padding-top: 100px;
+
+  @include min-width(md) {
+    padding-top: 140px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $CormorantGaramond;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    @include min-width(sm) {
+      max-width: 800px;
+      font-size: 30px;
+      line-height: 100%;
+    }
+    @include min-width(md) {
+      font-size: 36px;
+      line-height: 100%;
+    }
+
+
+  }
+
+  &__wrapper {
+    padding-top: 50px;
+
+    @include min-width(sm) {
+      padding-top: 60px;
+    }
+    @include min-width(md) {
+      display: grid;
+      grid-template-columns: 300px auto;
+    }
+  }
+
+  &__menu {
+    display: none;
+    @include min-width(md) {
+      display: block;
+      list-style: none;
+    }
+  }
+
+  &__picture {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-self: stretch;
+
+    @include min-width(sm) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 25px;
+    }
+
+    @include min-width(md) {
+      grid-gap: 40px;
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    @include min-width(md) {
+      display: none;
+    }
+
+    &--big {
+      display: none;
+      @include min-width(md) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__text {
+    padding-top: 10px;
+    font-family: $HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 130%;
+
+    @include min-width(md) {
+      padding-top: 13px;
+      font-size: 18px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__item {
+    padding-bottom: 10px;
+  }
+
+  &__link {
+    font-family: $HelveticaNeueCyr;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__disclose {
+    padding-left: 11px;
+  }
+}
+
