@@ -3,14 +3,12 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 32px;
-
   @include min-width(sm) {
     padding-top: 50px;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
     row-gap: 32px;
   }
-
   @include min-width(md) {
     padding-top: 70px;
     grid-template-columns: repeat(3, 1fr);
@@ -24,7 +22,6 @@
     font-weight: 550;
     font-size: 16px;
     line-height: 130%;
-
     @include min-width(md) {
       font-size: 18px;
       line-height: 130%;
@@ -39,7 +36,6 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 130%;
-
     @include min-width(md) {
       font-size: 16px;
       line-height: 150%;
@@ -51,7 +47,6 @@
     max-width: 220px;
     height: 1px;
     background-color: #B71C1C;
-
     @include min-width(md) {
       max-width: 300px;
     }

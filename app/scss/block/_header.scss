@@ -6,11 +6,9 @@
   justify-content: space-between;
   background-color: #fff;
   z-index: 999;
-
   @include min-width(sm) {
     padding-top: 33px
   }
-
   @include min-width(md) {
     padding-top: 35px;
     flex-wrap: wrap;

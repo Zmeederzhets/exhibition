@@ -1,7 +1,5 @@
 .step {
   padding-top: 100px;
-  @include min-width(sm) {
-  }
   @include min-width(md) {
     padding-top: 140px;
   }
@@ -23,15 +21,35 @@
   }
 
   &__item {
+    position: relative;
     padding-top: 45px;
     display: flex;
     flex-direction: column;
     list-style: none;
-
     @include min-width(md) {
       padding-top: 50px;
       flex-direction: row;
       justify-content: space-between;
+    }
+  }
+
+  &__line {
+    width: 1px;
+    height: 370px;
+    position: absolute;
+    left: 22px;
+    top: 60px;
+    background: #333333;
+    z-index: 1;
+    @include min-width(sm) {
+      left: 25px;
+    }
+    @include min-width(md) {
+      width: calc(100% - 160px);
+      height: 1px;
+      left: 30px;
+      right: 20%;
+      top: 80px;
     }
   }
 
@@ -55,14 +73,13 @@
     color: #FFFFFF;
     border-radius: 50%;
     background: #333;
-
+    z-index: 2;
     @include min-width(sm) {
       width: 50px;
       height: 50px;
       font-size: 22px;
       line-height: 130%;
     }
-
     @include min-width(md) {
       width: 60px;
       height: 60px;
@@ -88,9 +105,6 @@
     font-size: 16px;
     line-height: 130%;
     color: #333333;
-
-    @include min-width(sm) {
-    }
     @include min-width(md) {
       font-size: 18px;
     }
@@ -112,5 +126,4 @@
       line-height: 150%;
     }
   }
-
 }

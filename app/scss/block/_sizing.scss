@@ -1,0 +1,100 @@
+.sizing {
+  position: relative;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: $CormorantGaramond;
+    font-size: 26px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #333333;
+    @include min-width(sm) {
+      font-size: 30px;
+      line-height: 100%;
+    }
+    @include min-width(md) {
+      width: 50%;
+      font-size: 36px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    background-image: url("/img/sizing.jpg");
+    background-position: center center;
+    background-size: cover;
+    @include min-width(md) {
+      position: absolute;
+      width: 48%;
+      height: 300px;
+      top: 50px;
+      right: 0;
+
+    }
+  }
+
+  &__item {
+    padding-top: 15px;
+    font-family: $HelveticaNeueCyr;
+    font-size: 14px;
+    line-height: 130%;
+    color: #333333;
+    @include min-width(sm) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include min-width(md) {
+      width: 55%;
+      padding-top: 30px;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  &__text{
+    padding-top: 20px;
+    max-width: 260px;
+  }
+
+  &__link{
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+      color: #B71C1C;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: 35px;
+    padding: 20px 0;
+    text-align: center;
+    font-family: $HelveticaNeueCyr;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #B71C1C;
+    &:hover{
+      padding: 19px 31px 19px 31px;
+      border:  1px solid #B71C1C;
+      color: #B71C1C;
+      background: #FFFFFF;
+    }
+    @include min-width(sm) {
+      padding: 20px 32px 20px 32px;
+      width: fit-content;
+    }
+    @include min-width(md) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+

@@ -1,6 +1,5 @@
 .visit {
   display: none;
-
   @include min-width(sm) {
     display: flex;
     justify-content: space-around;
@@ -11,7 +10,6 @@
 
   &__time {
     display: none;
-
     @include min-width(md) {
       display: block;
       padding-left: 60px;

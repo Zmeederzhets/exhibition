@@ -1,6 +1,5 @@
 .catalog {
   padding-top: 100px;
-
   @include min-width(md) {
     padding-top: 140px;
   }
@@ -14,7 +13,6 @@
     line-height: 110%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     @include min-width(sm) {
       max-width: 800px;
       font-size: 30px;
@@ -24,13 +22,10 @@
       font-size: 36px;
       line-height: 100%;
     }
-
-
   }
 
   &__wrapper {
     padding-top: 50px;
-
     @include min-width(sm) {
       padding-top: 60px;
     }
@@ -53,12 +48,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     justify-self: stretch;
-
     @include min-width(sm) {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 25px;
     }
-
     @include min-width(md) {
       grid-gap: 40px;
     }
@@ -87,7 +80,6 @@
     font-weight: 550;
     font-size: 16px;
     line-height: 130%;
-
     @include min-width(md) {
       padding-top: 13px;
       font-size: 18px;
