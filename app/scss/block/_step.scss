@@ -1,0 +1,116 @@
+.step {
+  padding-top: 100px;
+  @include min-width(sm) {
+  }
+  @include min-width(md) {
+    padding-top: 140px;
+  }
+
+  &__title {
+    font-family: $CormorantGaramond;
+    font-size: 26px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #333333;
+    @include min-width(sm) {
+      font-size: 30px;
+      line-height: 100%;
+    }
+    @include min-width(md) {
+      font-size: 36px;
+    }
+  }
+
+  &__item {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+    @include min-width(md) {
+      padding-top: 50px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__list {
+    display: flex;
+    @include min-width(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__ellipse {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    border-radius: 50%;
+    background: #333;
+
+    @include min-width(sm) {
+      width: 50px;
+      height: 50px;
+      font-size: 22px;
+      line-height: 130%;
+    }
+
+    @include min-width(md) {
+      width: 60px;
+      height: 60px;
+      font-size: 26px;
+      line-height: 130%;
+    }
+  }
+
+  &__text {
+    padding-left: 20px;
+    @include min-width(sm) {
+      padding-left: 30px;
+    }
+    @include min-width(md) {
+      padding: 20px 0 0 0;
+    }
+  }
+
+  &__case {
+    max-width: 200px;
+    font-family: $HelveticaNeueCyr;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333333;
+
+    @include min-width(sm) {
+    }
+    @include min-width(md) {
+      font-size: 18px;
+    }
+  }
+
+  &__timing {
+    padding: 6px 0 30px;
+    font-family: $HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
+    color: #333333;
+    @include min-width(sm) {
+      padding: 6px 0 34px;
+    }
+    @include min-width(md) {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+}
