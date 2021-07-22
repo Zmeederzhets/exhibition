@@ -1,44 +1,134 @@
-.call{
+.call {
+  position: relative;
   margin-top: 100px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #333;
-  @include min-width(sm){
+  @include min-width(sm) {
     margin-top: 140px;
   }
+  @include min-width(md) {
+    flex-direction: row;
+  }
 
-  &__wrapper{}
-  &__title{
+  &__title {
+    max-width: 220px;
+    padding-top: 48px;
     font-family: $CormorantGaramond;
     font-size: 26px;
     line-height: 110%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-
-    @include min-width(sm){
+    @include min-width(sm) {
+      max-width: 410px;
+      padding-top: 55px;
       font-size: 30px;
       line-height: 100%;
     }
-    @include min-width(md){
+    @include min-width(md) {
+      max-width: 460px;
+      padding-top: 68px;
       font-size: 36px;
     }
   }
-  &__text{
+
+  &__text {
+    max-width: 220px;
+    padding-top: 30px;
+    padding-bottom: 36px;
     font-family: $HelveticaNeueCyr;
     font-size: 14px;
     line-height: 130%;
     color: #FFFFFF;
-
-    @include min-width(md){
+    @include min-width(sm) {
+      max-width: 290px;
+    }
+    @include min-width(md) {
+      padding-top: 22px;
+      padding-bottom: 70px;
       font-size: 16px;
       line-height: 150%;
     }
   }
 
-  &__vector{}
-  &__buttons{}
-  &__button{}
+  &__vector {
+    width: 37px;
+    height: 93px;
+    position: absolute;
+    display: block;
+    left: 85%;
+    top: 33%;
+    background-image: url("/img/vector3.svg");
+    @include min-width(sm) {
+      width: 66px;
+      height: 100px;
+      left: 78%;
+      right: 16%;
+      top: 32.51%;
+      bottom: 50.56%;
+      background-image: url("/img/vector2.svg");
+    }
+    @include min-width(md) {
+      width: 155px;
+      height: 23px;
+      left: 40.34%;
+      right: 46.38%;
+      top: 66.19%;
+      bottom: 27.23%;
+      background-image: url("/img/vector1.svg");
+    }
+  }
+
+  &__buttons {
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include min-width(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button {
+    margin: 14px;
+    padding-right: 22px;
+    display: flex;
+    align-items: center;
+    font-family: $HelveticaNeueCyr;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    @include min-width(sm) {
+      margin: 10px;
+      padding-right: 32px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+    @include min-width(md) {
+      margin: 8px;
+      font-size: 16px;
+      line-height: 16px;
+    }
+    &:hover {
+      color: #fff;
+      background: #B71C1C;
+    }
+  }
+
+  &__img {
+    padding: 15px 10px 15px 22px;
+    @include min-width(sm) {
+      padding: 15px 15px 15px 32px;
+    }
+    @include min-width(md) {
+      padding: 18px 15px 18px 32px;
+    }
+  }
 }
-@include min-width(sm){}
-@include min-width(md){}
+
