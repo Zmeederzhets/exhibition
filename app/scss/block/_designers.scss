@@ -1,37 +1,152 @@
-.designers{
-  width: 50%;
-  position: relative;
+.designers {
   margin-top: 100px;
 
-  &__title{
+  &__title {
     font-family: $CormorantGaramond;
     font-size: 26px;
     line-height: 110%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #333333;
-    @include min-width(sm){
+    @include min-width(sm) {
       font-size: 30px;
     }
-    @include min-width(md){
+    @include min-width(md) {
+      max-width: 800px;
       font-size: 36px;
     }
   }
 
-  &__carrousel{
-    width: 100%;
+  &__wrapper {
+    padding-top: 50px;
+    @include min-width(md) {
+      padding-top: 60px;
+      display: grid;
+      grid-template-columns:1fr 1fr;
+      grid-column-gap: 40px;
+    }
   }
-  &__slide{
+
+  &__carrousel {
+    position: relative;
+  }
+
+  &__slide {
     width: 100%;
     height: 250px;
-    background: url("../img/designers.jpg") ;
+    background: url("../img/designers.jpg");
     background-size: cover;
-    @include min-width(sm){
+    @include min-width(sm) {
       height: 380px;
     }
-    @include min-width(md){
+    @include min-width(md) {
       height: 400px;
     }
   }
 
+  &__list{
+    padding-top: 36px;
+    @include min-width(sm){
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    @include min-width(md){
+      display: block;
+    }
+  }
+  &__text {
+    max-width: 450px;
+    font-family: $HelveticaNeueCyr;
+    font-size: 14px;
+    line-height: 130%;
+    color: #333333;
+    @include min-width(md) {
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+  }
+
+  &__line {
+    margin: 15px 0 15px;
+    width: 210px;
+    height: 1px;
+    background: #B71C1C;
+  }
+
+  &__variant {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__unit {
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    background: #F8F3EF;
+    @include min-width(sm) {
+      margin-top: 25px;
+    }
+    @include min-width(md) {
+      margin-top: 40px;
+    }
+
+    &:hover {
+      .designers__link {
+        color: #B71C1C;
+      }
+    }
+  }
+
+  &__photo {
+    margin: 25px 25px 0 25px;
+    width: 90px;
+    @include min-width(sm) {
+      margin: 30px 35px 0 35px;
+      width: 120px;
+    }
+    @include min-width(md) {
+      margin: 35px 50px 0 50px;
+      width: 160px;
+    }
+  }
+
+  &__name {
+    padding-top: 20px;
+    font-family: $HelveticaNeueCyr;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #333333;
+    @include min-width(md) {
+      padding-top: 32px;
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+    padding-top: 15px;
+    padding-bottom: 24px;
+    font-family: $HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #333333;
+    @include min-width(sm) {
+      padding-bottom: 30px;
+      font-size: 14px;
+    }
+    @include min-width(md) {
+      padding-top: 25px;
+      padding-bottom: 34px;
+      font-size: 16px;
+    }
+  }
 }
+

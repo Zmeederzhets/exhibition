@@ -46,9 +46,10 @@
   }
 
   &__radio {
-    margin-top: -40px;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
     text-align: center;
-    display: block;
 
   }
 
