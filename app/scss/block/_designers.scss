@@ -34,7 +34,7 @@
   &__slide {
     width: 100%;
     height: 250px;
-    background: url("../img/designers.jpg");
+    background: url("../img/designers/designers.jpg");
     background-size: cover;
     @include min-width(sm) {
       height: 380px;

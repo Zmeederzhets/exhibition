@@ -6,15 +6,15 @@
   &__slide{
     width: 100%;
     height: 250px;
-    background: url("../img/slider1_mob.jpg") ;
+    background: url("../img/slider/slider1_mob.jpg") ;
     background-size: cover;
     @include min-width(sm){
       height: 380px;
-      background-image: url("../img/slider1_p.jpg");
+      background-image: url("../img/slider/slider1_p.jpg");
     }
     @include min-width(md){
       height: 400px;
-      background-image: url("../img/slider1.jpg");
+      background-image: url("../img/slider/slider1.jpg");
     }
   }
 
@@ -37,12 +37,12 @@
 
   &__arrow-next {
     right: 30px;
-    background-image: url("/img/next.svg");
+    background-image: url("/img/slider/next.svg");
   }
 
   &__arrow-prev {
     left: 30px;
-    background-image: url("/img/previous.svg");
+    background-image: url("/img/slider/previous.svg");
   }
 
   &__radio {
