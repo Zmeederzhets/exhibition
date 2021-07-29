@@ -1,0 +1,127 @@
+.production {
+  display: flex;
+  padding-top: 140px;
+  flex-direction: column;
+  @include min-width(sm) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 100px;
+  }
+
+  &__title {
+    padding-bottom: 50px;
+    font-family: $CormorantGaramond;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #333333;
+    @include min-width(sm) {
+      font-size: 30px;
+      line-height: 100%;
+    }
+    @include min-width(md) {
+      min-width: 700px;
+      font-size: 36px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    @include min-width(md) {
+      max-width: 400px;
+      flex-direction: column;
+    }
+  }
+  &__subtitle {
+    max-width: 350px;
+    font-family: $HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333333;
+    @include min-width(md) {
+      font-size: 18px;
+    }
+
+    &--catalog {
+      padding-bottom: 30px;
+    }
+  }
+  &__text {
+    font-family: $HelveticaNeueCyr;
+    font-size: 14px;
+    line-height: 130%;
+    color: #333333;
+    @include min-width(md) {
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+  &__line {
+    margin-top: 10px;
+    max-width: 215px;
+    height: 1px;
+    background-color: #B71C1C;
+  }
+
+  &__img {
+    @include min-width(md) {
+      max-width: 560px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px 40px;
+    border: 1px solid #333333;
+    @include min-width(md) {
+      margin-top: 70px;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__catalog {
+    padding-bottom: 35px;
+    line-height: 200%;
+    display: flex;
+    justify-content: space-around;
+
+    &--material {
+      padding-right: 40px;
+    }
+  }
+  &__buttons{
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    width: 100%;
+    padding: 20px 30px;
+    font-family: $HelveticaNeueCyr;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    border: 1px solid #B71C1C;
+    background: #FFFFFF;
+    color: #B71C1C;
+    @include min-width(sm) {
+      width: fit-content;
+      font-size: 14px;
+      line-height: 130%;
+    }
+
+    &:hover {
+      color: #fff;
+      background: #B71C1C;
+    }
+  }
+}

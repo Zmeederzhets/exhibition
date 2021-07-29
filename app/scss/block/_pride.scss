@@ -50,13 +50,11 @@
     @include min-width(md) {
       max-width: 300px;
     }
-
     &--delete {
       @include min-width(md) {
         display: none;
       }
     }
-
     &--delete2 {
       @include min-width(sm) {
         display: none;

@@ -1,0 +1,83 @@
+.feedback {
+  padding-top: 140px;
+  @include min-width(sm) {
+    padding-top: 100px;
+  }
+
+  &__title {
+    font-family: $CormorantGaramond;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #333333;
+    @include min-width(sm) {
+      font-size: 30px;
+      line-height: 100%;
+    }
+    @include min-width(md) {
+      font-size: 36px;
+    }
+  }
+
+  &__reviews {
+    padding-top: 50px;
+
+
+    @include min-width(sm) {
+
+    }
+    @include min-width(md) {
+      padding-top: 70px;
+      display: flex;
+    }
+
+  }
+
+  &__video {
+    width: 500px;
+    height: 280px;
+    object-fit: contain;
+  }
+
+  &__blockquote {
+    position: relative;
+    max-width: 220px;
+    padding-top: 30px;
+    margin-left: 200px;
+    font-family: $HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333333;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: -70px;
+      width: 60px;
+      height: 1px;
+      background: #B71C1C;
+    }
+  }
+  &__explanation{
+    padding:60px 100px 0 100px;
+  }
+
+  &__maps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
+}
+
+@include min-width(sm) {
+}
+
+@include min-width(md) {
+}
