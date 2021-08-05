@@ -42,17 +42,25 @@
       padding-left: 40px;
       font-size: 22px;
     }
-
   }
 
   &__phone-basic {
     padding-right: 7px;
+
+    &:hover {
+      text-decoration: none;
+      color: #B71C1C;
+    }
   }
 
   &__phone-other {
     display: none;
     @include min-width(sm) {
       display: block;
+    }
+    &:hover{
+      text-decoration: none;
+      color: #B71C1C;
     }
   }
 }

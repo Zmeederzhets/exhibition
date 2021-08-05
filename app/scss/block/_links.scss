@@ -1,0 +1,39 @@
+.links {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-gap: 20px;
+  border-bottom: 1px solid #333333;
+  &__logo{
+    width: 108px;
+    height: 64px;
+    @include min-width(md){
+      width: 140px;
+      height: 84px;
+    }
+  }
+  &__item {
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    font-family: $HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 130%;
+    color: #333333;
+    @include min-width(md) {
+      font-size: 14px;
+    }
+    &--bold{
+      font-weight: 550;
+      font-size: 14px;
+      @include min-width(md) {
+        font-size: 16px;
+      }
+    }
+    &--link{
+      margin-bottom: 15px;
+    }
+  }
+}

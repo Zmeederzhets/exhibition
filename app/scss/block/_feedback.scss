@@ -24,16 +24,11 @@
 
   &__reviews {
     padding-top: 50px;
-
-
-    @include min-width(sm) {
-
-    }
     @include min-width(md) {
       padding-top: 70px;
       display: flex;
+      justify-content: space-between;
     }
-
   }
 
   &__video {
@@ -44,9 +39,9 @@
 
   &__blockquote {
     position: relative;
-    max-width: 220px;
+    max-width: 360px;
     padding-top: 30px;
-    margin-left: 200px;
+    margin-left: 140px;
     font-family: $HelveticaNeueCyr;
     font-style: normal;
     font-weight: 550;
@@ -64,20 +59,45 @@
       background: #B71C1C;
     }
   }
-  &__explanation{
-    padding:60px 100px 0 100px;
+  &__explanation {
+    max-width: 500px;
+    padding: 60px 100px 0 70px;
+
   }
 
   &__maps {
+    padding-top: 70px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
   }
-
-
+  &__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #333333;
+  }
+  &__logo {
+    margin: 20px 0;
+  }
+  &__star {
+    font-family: $HelveticaNeueCyr;
+    font-size: 14px;
+    line-height: 130%;
+    color: #333333;
+  }
+  &__link {
+    margin: 16px 0 20px;
+    font-family: $HelveticaNeueCyr;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    color: #333333;
+    &:hover{
+      text-decoration: none;
+      color: #B71C1C;
+    }
+  }
 }
 
-@include min-width(sm) {
-}
-
-@include min-width(md) {
-}

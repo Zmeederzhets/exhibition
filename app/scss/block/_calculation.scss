@@ -149,6 +149,10 @@
         font-size: 12px;
         letter-spacing: normal;
       }
+      &:hover{
+        text-decoration: none;
+        color: #B71C1C;
+      }
     }
   }
 
@@ -243,6 +247,10 @@
     &--link {
       text-decoration-line: underline;
       color: #FFFFFF;
+      &:hover{
+        text-decoration: none;
+        color: #B71C1C;
+      }
     }
   }
 
@@ -274,6 +282,10 @@
       color: #FFFFFF;
       @include min-width(sm){
         margin-right: 50px;
+      }
+      &:hover{
+        text-decoration: none;
+        color: #B71C1C;
       }
     }
   }
