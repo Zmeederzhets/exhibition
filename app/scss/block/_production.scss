@@ -1,12 +1,14 @@
 .production {
   display: flex;
-  padding-top: 140px;
+  padding-top: 100px;
   flex-direction: column;
   @include min-width(sm) {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 100px;
+  }
+  @include min-width(md) {
+    padding-top: 140px;
   }
 
   &__title {
@@ -31,11 +33,13 @@
 
   &__block {
     display: flex;
+    max-width: 300px;
+    flex-direction: column;
     @include min-width(md) {
       max-width: 400px;
-      flex-direction: column;
     }
   }
+
   &__subtitle {
     padding-bottom: 15px;
     max-width: 350px;
@@ -53,6 +57,7 @@
       padding-bottom: 30px;
     }
   }
+
   &__text {
     font-family: $HelveticaNeueCyr;
     font-size: 14px;
@@ -63,6 +68,7 @@
       line-height: 150%;
     }
   }
+
   &__line {
     margin-top: 10px;
     max-width: 215px;
@@ -71,24 +77,43 @@
   }
 
   &__img {
+    padding-top: 35px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     @include min-width(md) {
+      padding-top: 0;
       max-width: 560px;
+      height: 100%;
     }
   }
 
   &__list {
-    width: 100%;
-    margin-top: 50px;
-    padding: 50px 40px;
-    border: 1px solid #333333;
+    display: none;
+    @include min-width(sm) {
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+      padding: 50px 40px;
+      border: 1px solid #333333;
+    }
     @include min-width(md) {
       margin-top: 70px;
     }
   }
+
   &__item {
-    display: flex;
-    justify-content: space-between;
+    @include min-width(sm) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    @include min-width(md) {
+      flex-wrap: nowrap;
+    }
+
   }
+
   &__catalog {
     padding-bottom: 35px;
     line-height: 200%;
@@ -99,10 +124,19 @@
       padding-right: 40px;
     }
   }
-  &__buttons{
+
+  &__buttons {
     display: flex;
     justify-content: center;
+    &--mobile{
+      margin-top: 35px;
+      display: block;
+      @include min-width(sm) {
+        display: none;
+      }
+    }
   }
+
   &__button {
     width: 100%;
     padding: 20px 30px;

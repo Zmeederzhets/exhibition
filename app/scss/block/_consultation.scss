@@ -20,21 +20,35 @@
   }
 
   &__text {
-    max-width: 500px;
-    padding-top: 60px;
+    max-width: 300px;
+    padding-top: 45px;
     font-family: $HelveticaNeueCyr;
-    font-size: 16px;
-    line-height: 150%;
+    font-size: 14px;
+    line-height: 130%;
     color: #333333;
+    @include min-width(md) {
+      max-width: 500px;
+      padding-top: 60px;
+      font-size: 16px;
+      line-height: 150%;
+    }
   }
 
   &__phone {
-    padding: 18px 0 95px;
-    max-width: 500px;
+    padding: 18px 0 40px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-
+    grid-template-columns: 1fr;
+    @include min-width(sm) {
+      padding: 18px 0 125px;
+    }
+    @include min-width(md) {
+      padding: 18px 0 95px;
+      max-width: 500px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-auto-flow: column;
+    }
   }
 
   &__call {
@@ -48,7 +62,8 @@
     @include min-width(md) {
       font-size: 22px;
     }
-    &:hover{
+
+    &:hover {
       text-decoration: none;
       color: #B71C1C;
     }
@@ -61,16 +76,18 @@
     font-family: $HelveticaNeueCyr;
     font-size: 14px;
     line-height: 130%;
-     text-decoration-line: underline;
+    text-decoration-line: underline;
     color: #333333;
-    @include min-width(md){
+    @include min-width(md) {
       font-size: 16px;
     }
-    &:hover{
+
+    &:hover {
       text-decoration: none;
       color: #B71C1C;
     }
-    &--icon{
+
+    &--icon {
       margin-right: 10px;
       @include min-width(md) {
         margin-right: 15px;
@@ -79,15 +96,19 @@
   }
 
   &__form {
-    margin-top: 30px;
     background: #F8F3EF;
     z-index: 3;
+    @include min-width(sm) {
+      width: 300px;
+      position: absolute;
+      top: 240px;
+      left: 320px;
+    }
     @include min-width(md) {
-      margin-top: 0;
-      width: 460px;
+      width: 400px;
       position: absolute;
       top: 160px;
-      right: 0;
+      left: 600px;
     }
   }
 
@@ -95,10 +116,10 @@
     padding: 35px 0 45px 0;
     display: flex;
     flex-direction: column;
-    max-width: 260px;
+    max-width: 240px;
     margin: 0 auto;
-    @include min-width(sm) {
-      max-width: 330px;
+    @include min-width(md) {
+      max-width: 280px;
     }
   }
 
@@ -134,10 +155,11 @@
     color: #FFFFFF;
     border: 1px solid #B71C1C;
     background: #B71C1C;
-    @include min-width(md){
+    @include min-width(md) {
       font-size: 16px;
       line-height: 16px;
     }
+
     &:hover {
       color: #B71C1C;
       background: #FFFFFF;
@@ -158,7 +180,8 @@
 
     &--link {
       text-decoration-line: underline;
-      &:hover{
+
+      &:hover {
         text-decoration: none;
         color: #B71C1C;
       }

@@ -39,29 +39,25 @@
     <nav class="menu">
         <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
             <svg class="menu__icon" aria-hidden="true" width="26" height="26">
-                <use class="menu__icon-menu " href="img/sprite.svg#menu"></use>
-                <use class="menu__icon-cross" href="img/sprite.svg#cross"></use>
+                <use class="menu__icon-menu " href="img/ico/sprite.svg#menu"></use>
+                <use class="menu__icon-cross" href="img/ico/sprite.svg#cross"></use>
             </svg>
         </button>
         <ul class="menu__list" id="menu__list">
             <li class="menu__item">
-                <a class="menu__link " href>КАТАЛОГ МЕБЕЛИ</a>
-                <img class="menu__disclose" src="img/ico/triangle.svg" alt="">
+                <a class="menu__link menu__disclose" href>КАТАЛОГ МЕБЕЛИ</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link " href>МАТЕРИАЛЫ</a>
-                <img class="menu__disclose" src="img/ico/triangle.svg" alt="">
+                <a class="menu__link menu__disclose" href>МАТЕРИАЛЫ</a>
             </li>
             <li class="menu__item">
                 <a class="menu__link " href>ГАРАНТИЯ</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href>ПОЛЕЗНО</a>
-                <img class="menu__disclose" src="img/ico/triangle.svg" alt="">
+                <a class="menu__link menu__disclose" href>ПОЛЕЗНО</a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href>ПОРТФОЛИО</a>
-                <img class="menu__disclose" src="img/ico/triangle.svg" alt="">
+                <a class="menu__link menu__disclose" href>ПОРТФОЛИО</a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href>КОНТАКТЫ</a>
@@ -116,20 +112,16 @@
         <div class="catalog__wrapper">
             <ul class="catalog__menu">
                 <li class="catalog__item">
-                    <a class="catalog__link" href="">Кухни</a>
-                    <img class="catalog__disclose" src="img/ico/triangle_black.svg" alt="">
+                    <a class="catalog__link catalog__disclose" href="">Кухни</a>
                 </li>
                 <li class="catalog__item">
-                    <a class="catalog__link" href="">Шкафы-купе</a>
-                    <img class="catalog__disclose" src="img/ico/triangle_black.svg" alt="">
+                    <a class="catalog__link catalog__disclose" href="">Шкафы-купе</a>
                 </li>
                 <li class="catalog__item">
-                    <a class="catalog__link" href="">Мебель для ванной</a>
-                    <img class="catalog__disclose" src="img/ico/triangle_black.svg" alt="">
+                    <a class="catalog__link catalog__disclose" href="">Мебель для ванной</a>
                 </li>
                 <li class="catalog__item">
-                    <a class="catalog__link" href="">Прихожие</a>
-                    <img class="catalog__disclose" src="img/ico/triangle_black.svg" alt="">
+                    <a class="catalog__link catalog__disclose" href="">Прихожие</a>
                 </li>
                 <li class="catalog__item">
                     <a class="catalog__link" href="">Детская мебель</a>
@@ -150,8 +142,7 @@
                     <a class="catalog__link" href="">Межкомнатные перегородки</a>
                 </li>
                 <li class="catalog__item">
-                    <a class="catalog__link" href="">Мебель для спальной</a>
-                    <img class="catalog__disclose" src="img/ico/triangle_black.svg" alt="">
+                    <a class="catalog__link catalog__disclose" href="">Мебель для спальной</a>
                 </li>
                 <li class="catalog__item">
                     <a class="catalog__link" href="">Мебель из массива</a>
@@ -298,6 +289,7 @@
         <h2 class="step__title">5 шагов до интерьера вашей мечты</h2>
         <ol class="step__item">
             <li class="step__list">
+                <span class="step__line"></span>
                 <div class="step__ellipse">1</div>
                 <div class="step__text">
                     <h3 class="step__case">Замер, договор и предоплата 50%</h3>
@@ -332,9 +324,7 @@
                     <p class="step__timing">в течение 12 месяцев </p>
                 </div>
             </li>
-            <span class="step__line"></span>
         </ol>
-
     </div>
     <div class="sizing">
         <h2 class="sizing__title">Замерщики точно снимут размеры помещения</h2>
@@ -445,8 +435,11 @@
                 кандидатов на реальном проекте.</p>
             <hr class="production__line">
             <p class="production__text">Мебель производим на итальянских роботизированных станках Fielder. </p>
+            <div class="production__buttons production__buttons--mobile">
+                <button class="production__button">ПОСМОТРЕТЬ ВЕСЬ КАТАЛОГ</button>
+            </div>
         </div>
-        <div class="production__img"><img src="img/production.jpg" alt=""></div>
+        <div class="production__img"><img class="production__img" src="img/production.jpg" alt=""></div>
         <div class="production__list">
             <h3 class="production__subtitle production__subtitle--catalog">Изготавливаем мебель только из проверенных
                 годами материалов</h3>
@@ -511,18 +504,22 @@
         </div>
     </div>
     <div class="feedback">
-
         <h2 class="feedback__title">Ваш ПРОЕКТ В НАДЕЖНЫХ РУКАХ — Посмотрите отзывы и убедитесь в этом сами </h2>
 
-        <div class="feedback__reviews">
-            <iframe class="feedback__video" src="https://www.youtube.com/embed/tCECsNRNqd0?controls=0"
-                    allowfullscreen></iframe>
+
+        <div class="feedback__reviews  feedback__reviews--reverse">
             <div class="feedback__text">
                 <blockquote class="feedback__blockquote">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ea, earum ipsa minima
                         possimus
                         temporibus!</p>
                 </blockquote>
+            </div>
+            <div>
+                <div class="feedback__video">
+                    <iframe class="feedback__video--iframe" src="https://www.youtube.com/embed/tCECsNRNqd0?controls=0"
+                            allowfullscreen></iframe>
+                </div>
                 <p class="feedback__explanation">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
         </div>
@@ -533,11 +530,16 @@
                         possimus
                         temporibus!</p>
                 </blockquote>
-                <p class="feedback__explanation">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-            <iframe class="feedback__video" src="https://www.youtube.com/embed/tCECsNRNqd0?controls=0"
-                    allowfullscreen></iframe>
+            <div>
+                <div class="feedback__video">
+                    <iframe class="feedback__video--iframe" src="https://www.youtube.com/embed/tCECsNRNqd0?controls=0"
+                            allowfullscreen></iframe>
+                </div>
+                <p class="feedback__explanation feedback__explanation--reverse">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
         </div>
+
 
         <div class="feedback__maps">
             <div class="feedback__block">
@@ -596,15 +598,14 @@
             самостоятельно:</p>
         <div class="consultation__phone">
             <a class="consultation__call" href="tel:+375298521563">8 (343) 2 868 395</a>
+            <a class="consultation__call" href="tel:+375298521563">8 (902) 8 777 952</a>
             <a class="consultation__messenger" href="https://wa.me/+375298521563" target="_blank" rel="nofollow"><img
                     class="consultation__messenger--icon"
                     src="img/ico/watsapp.svg" alt="">Написать в WhatsApp</a>
-            <a class="consultation__call" href="tel:+375298521563">8 (902) 8 777 952</a>
             <a class="consultation__messenger" href="https://t.me/sorok_perviy_medved" target="_blank"
                rel="nofollow"><img class="consultation__messenger--icon" src="img/ico/telegram.svg" alt="">Написать в
                 Telegram</a>
         </div>
-
         <div class="consultation__form">
             <div class="consultation__wrapper">
                 <input class="consultation__data" type="text" name="name" title="Введите ваше имя"
@@ -680,7 +681,6 @@
             <a class="links__item--link" href="">Уход за мебелью</a>
             <a class="links__item--link" href="">Сертификаты материалов</a>
         </div>
-
     </div>
     <div class="footer  contain">
         <div class="footer__text"><p>Использование материалов с данного сайта, разрешена только по согласию с
